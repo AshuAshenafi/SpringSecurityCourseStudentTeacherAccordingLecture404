@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -30,7 +31,12 @@ public class HomeController {
         return "student";
     }
 
-    @RequestMapping("/logout")
+    @RequestMapping("/admin")
+    public String admin(){
+        return "admin";
+    }
+
+    @PostMapping("/logout")
     public String logout() {
         return "redirect:/login?logout=true";
     }

@@ -6,6 +6,18 @@
 </head>
 <body>
 <h1>Login Page</h1>
+<hr>
+<p>You can login as <strong>USER</strong>:</p>
+<p>Username = <strong>bart</strong> and Password = <strong>bart</strong></p>
+<hr>
+<p>You can login as <strong>ADMIN</strong>:</p>
+<p>Username = <strong>ted</strong> and Password = <strong>ted</strong></p>
+<hr>
+<p>You can login as both <strong>USER</strong> and <strong>ADMIN</strong>:</p>
+<p>Username = <strong>super</strong> and Password = <strong>super</strong></p>
+<hr>
+
+
 <div th:if="${param.error}" style="color: red">
     Invalid username or password
 </div>
